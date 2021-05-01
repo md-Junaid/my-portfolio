@@ -1,0 +1,93 @@
+/* Taking too long
+
+/*  if viewport <= 340px */
+@media only screen and (max-width: 480px){
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand{
+    padding: 2%;
+    margin: 0%;
+  }
+
+  .site-main .site-banner .site-title h4{
+    font-size: 1.1rem;
+  }
+
+  .css-typing h4:nth-child(2){
+    width: 22rem;
+  }
+
+  .css-typing h4:nth-child(3){
+    width: 19.8rem;
+  }
+
+  .site-main .about-area{
+    padding: 8rem 1rem;
+  }
+
+  .site-main .about-area .about-title h2>span{
+    font-size: 1.6rem !important;
+  }
+
+  .site-main .about-area .about-title .paragraph{
+    width: 100% !important;
+  }
+
+  .site-main .brand-area{
+    padding: 1rem 2rem !important;
+    margin-bottom: 4rem;
+  }
+
+  .fa-3x{
+    font-size: 1.5rem;
+  }
+
+  .call-now a{
+    font-size: 17px;
+  }
+
+  .call-now > span{
+    font-size: 14px;
+  }
+
+  .site-main .project-area .button-group button + button{
+    margin-left: 0rem !important;
+  }
+
+  .site-main .project-area .button-group button{
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width:792px){
+  .site-main .about-area .about-title h2>span{
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+
+  .site-main .brand-area .technologies-area .years-area{
+    padding-left: 1%;
+    width: 49%;
+  }
+
+  .site-main .about-area .about-title .paragraph{
+    width: 100% !important;
+  }
+
+  .site-main .brand-area .technologies-area .call-area{
+    padding-left: 3%;
+  }
+
+  .site-main .about-area .about-title p{
+      padding: 0%;
+  }
+
+  .site-main .project-area .button-group button{
+    font-size: 16px;
+  }
+
+  .site-main .project-area .button-group button + button{
+    margin-left: 0.2rem;
+  }
+}
+
+

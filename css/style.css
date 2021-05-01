@@ -1,0 +1,438 @@
+
+/* Import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* Import variables file */
+@import url(./partials/_variables.css);
+
+/* Global css file */
+@import url(./partials/_global.css);
+
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand{
+  padding: 0 4rem 0 4rem;
+}
+
+.header_area .main-menu .navbar{
+  padding: 1rem 6rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+  font: normal 200 15px/2px var(--roboto-cursive);
+  text-transform: uppercase;
+  padding: 1rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .nav-item a{
+  font-weight: 600;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* end navigation */
+
+/* Banner Area Start */
+
+body{
+  background: url(../img/banner/bg-home-5.png) no-repeat;
+  background-position: 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+  margin-top: 35%;
+  /* font-weight: 500; */
+  text-shadow: 0.5px 0.5px #4a4a4a;
+}
+
+
+.site-main .site-banner .site-title h4{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.site-main .site-banner .banner-image > img{
+  padding: 7rem 0;
+  width: 50rem;
+}
+
+.css-typing .hidden{
+  border-right: .15em solid var(--secondary-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing h3{
+  width: 5.1em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h4:nth-child(2){
+  width: 18.5em;
+  opacity: 0;
+  -webkit-animation: type2 3s steps(40, end);
+  animation: type2 3s steps(40, end);
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h4:nth-child(3){
+  width: 17.4em;
+  opacity: 0;
+  -webkit-animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 5.2s;
+  animation-delay: 5.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin-bottom: 3rem;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid var(--secondary-color);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+/* Banner Area End */
+
+
+/* Start About Area */
+
+.site-main .about-area{
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 60px;
+  letter-spacing: 12px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+  padding: .4rem 0;
+  text-align: justify;
+}
+
+/* End About Area */
+
+/* End Brand Area */
+
+.site-main .brand-area{
+  padding: 1rem 10rem;
+  margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+  display: flex;
+  justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.2rem 0rem;
+  margin: .9rem 0rem;
+  width: 180px;
+  cursor: pointer;
+  transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+  width: 50%;
+  filter: grayscale(100%);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+  filter: grayscale(20%);
+}
+
+.site-main .brand-area .technologies-area{
+  padding-left: 1rem; padding-top: 1rem;
+  background: #e029290a;
+}
+
+.site-main .brand-area .technologies-area .years-area{
+  background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+  padding: 2rem 0;
+  height: 18rem;
+  position: relative;
+}
+
+.site-main .brand-area .technologies-area{
+  height: 100%;
+}
+
+.site-main .brand-area .technologies-area .years-area .years > span{
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 40px;
+  color: var(--secondary-color);
+  z-index: 2;
+}
+
+.site-main .brand-area .technologies-area .call-area{
+  margin-bottom: 2rem;
+}
+
+/* End Brand Area */
+
+/* Project Area */ 
+
+.site-main .project-area{
+  padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  position: relative;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.site-main .project-area .button-group button + button{
+  margin-left: 3rem;
+}
+
+.site-main .project-area .button-group button:hover{
+  color: var(--secondary-color);
+}
+
+.site-main .project-area .button-group .active{
+  border-bottom: 3px solid rgba(133, 79, 238, 0.8);
+  padding-bottom: 2px;
+  color: #4a4a4a;
+}
+
+.site-main .project-area .grid .card{
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+
+.site-main .project-area .grid .card:hover{
+  filter: brightness(1.05) drop-shadow(1px 8px 30px #b1afaf);
+  /* border: 1px solid var(--secondary-color); */
+}
+
+.site-main .project-area .grid .card img{
+  border-radius: 25px 25px 0 0;
+  /* width: 400px; */
+}
+
+.site-main .project-area .grid .card .card-body a:hover{
+  color: var(--secondary-color);
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+  font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/* End Project Area */ 
+
+/* Start Testimonial Area */
+
+.site-main .about-area .about-title p{
+  padding: 1rem 7rem;
+}
+
+.site-main .about-area .client{
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+  border-radius: 100px;
+}
+
+.site-main .about-area .client .client-img{
+  padding: 0.2rem;
+}
+
+.client .img-fluid{
+  border-radius: 100px;
+  width: 150px !important;
+}
+
+.site-main .about-area .client .about-client{
+  padding-top: 1.5rem;
+  padding-left: 0.1rem;
+}
+
+.site-main .about-area .client .about-client h4{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.site-main .about-area .client .about-client p{
+  font-size: 14px;
+  text-align: justify;
+  padding: 1px 8px;
+}
+
+.site-main .about-area .owl-carousel .owl-item{
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+  background: var(--primary-color);
+  width: 12px;
+  height: 12px;
+}
+
+/* End Testimonial Area*/
+
+/* Start Footer Area */
+
+footer.footer-area{
+  padding: 2.5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+footer.footer-area .social a>i{
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i{
+  color: var(--primary-color);
+}
+
+/* End Footer Area */
