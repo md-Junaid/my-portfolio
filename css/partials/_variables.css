@@ -10,8 +10,8 @@ html,body{
 /* CSS Variables */
 
 :root{
-  --primary-color: #4458dc;
-  --secondary-color: #854fee;
+  --primary-color: #4458dc;     /* #1976D2 */
+  --secondary-color: #854fee;  /* #0097A7 */
   --title-color: #141313;
   --text-color: #777777;
   --border-color: #201f1f17;
