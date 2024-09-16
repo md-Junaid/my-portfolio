@@ -9,6 +9,16 @@
 @import url(./partials/_global.css);
 
 
+a {
+  text-decoration: none !important;
+}
+
+.card a:hover{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 /* start navigation */
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -20,21 +30,22 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-  font: normal 200 15px/2px var(--roboto-cursive);
-  text-transform: uppercase;
+  /* font: normal 200 15px/2px var(--roboto-cursive); */
+  /* text-transform: uppercase; */
   padding: 1rem;
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 
 .header_area .main-menu .navbar-nav .nav-item a{
   font-weight: 600;
 }
 
-.header_area .main-menu .navbar-nav .active a{
+.header_area .main-menu .navbar-nav .active {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: var(--title-color);
 }
 
 .header_area .main-menu .navbar-nav a:hover{
@@ -330,11 +341,13 @@ body{
   width: 100%;
   border-radius: 25px;
   margin-bottom: 2rem;
+  transition: transform 0.6s ease;
 }
 
 .site-main .project-area .grid .card:hover{
-  filter: brightness(1.05) drop-shadow(1px 8px 30px #b1afaf);
+  filter: brightness(1.05) drop-shadow(1px 1px 10px #b1afaf);
   /* border: 1px solid var(--secondary-color); */
+  transform: scale(1.015);
 }
 
 .site-main .project-area .grid .card img{
@@ -352,6 +365,7 @@ body{
 
 .site-main .project-area .grid .our-project .img a:hover img{
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+  transition: transform 5s ease;
 }
 
 

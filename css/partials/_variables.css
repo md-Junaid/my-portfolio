@@ -17,7 +17,7 @@ html,body{
   --border-color: #201f1f17;
   --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
-  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.305);
+  --box-shadow: 1px 1px 10px rgba(57, 56, 61, 0.305);
 
   /* font family variables */
   --roboto-cursive:'Roboto',cursive;
