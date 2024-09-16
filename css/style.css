@@ -61,7 +61,10 @@ a {
 
 body{
   background: url(../img/banner/bg-home-5.png) no-repeat;
-  background-position: 0% 50%;
+  background-position: 'absolute';
+  top: 0;
+  left: 0;
+  z-index: 1000000;
 }
 
 .site-main .site-banner .site-title h3{
