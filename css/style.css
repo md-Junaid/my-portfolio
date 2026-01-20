@@ -657,8 +657,107 @@ footer.footer-area .social a:hover>i{
 
 .site-main .project-area .grid .card img {
   border-radius: 15px 15px 0 0;
+  /* width: 400px; */
+}
+
+.project-placeholder {
   height: 200px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.fieldsim-placeholder {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.fieldsim-placeholder::before {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.analytics-placeholder {
+  background: linear-gradient(135deg, #0f5e49 0%, #1a8c6b 50%, #2ecc71 100%);
+}
+
+.analytics-placeholder::before {
+  background: linear-gradient(135deg, #0f5e49 0%, #1a8c6b 50%, #2ecc71 100%);
+}
+
+.corporategpt-placeholder {
+  background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 50%, #ab47bc 100%);
+}
+
+.corporategpt-placeholder::before {
+  background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 50%, #ab47bc 100%);
+}
+
+.ucip-placeholder {
+  background: linear-gradient(135deg, #1565c0 0%, #1976d2 50%, #42a5f5 100%);
+}
+
+.ucip-placeholder::before {
+  background: linear-gradient(135deg, #1565c0 0%, #1976d2 50%, #42a5f5 100%);
+}
+
+.flood-placeholder {
+  background: linear-gradient(135deg, #0277bd 0%, #039be5 50%, #29b6f6 100%);
+}
+
+.flood-placeholder::before {
+  background: linear-gradient(135deg, #0277bd 0%, #039be5 50%, #29b6f6 100%);
+}
+
+.floodml-placeholder {
+  background: linear-gradient(135deg, #4527a0 0%, #512da8 50%, #5e35b1 100%);
+}
+
+.floodml-placeholder::before {
+  background: linear-gradient(135deg, #4527a0 0%, #512da8 50%, #5e35b1 100%);
+}
+
+.profindo-placeholder {
+  background: linear-gradient(135deg, #ff6f00 0%, #ffa726 50%, #ffb74d 100%);
+}
+
+.profindo-placeholder::before {
+  background: linear-gradient(135deg, #ff6f00 0%, #ffa726 50%, #ffb74d 100%);
+}
+
+.placeholder-icon {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 0.8rem;
+  z-index: 1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.placeholder-text {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-placeholder:hover {
+  transform: scale(1.02);
+  transition: transform 0.4s ease;
 }
 
 .site-main .project-area .grid .card .card-body {
