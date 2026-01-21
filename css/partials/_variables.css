@@ -24,6 +24,18 @@ html,body{
   --bg-secondary: #f8f9fa;
   --card-bg: #ffffff;
 
+  /* Muted text colors */
+  --text-muted: #666666;
+  --text-lighter: #888888;
+
+  /* Surface colors */
+  --surface-light: #f8f9fa;
+  --surface-border: #f0f0f0;
+
+  /* Component backgrounds */
+  --tag-bg: #f5f5f8;
+  --navbar-fixed-bg: rgba(255, 255, 255, 0.95);
+
   /* font family variables */
   --roboto-cursive:'Roboto',cursive;
   --roboto:'Roboto';
@@ -38,4 +50,16 @@ html,body{
   --bg-secondary: #16213e;
   --card-bg: #1f2937;
   --box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+
+  /* Muted text colors */
+  --text-muted: #9ca3af;
+  --text-lighter: #6b7280;
+
+  /* Surface colors */
+  --surface-light: #16213e;
+  --surface-border: #374151;
+
+  /* Component backgrounds */
+  --tag-bg: rgba(133, 79, 238, 0.2);
+  --navbar-fixed-bg: rgba(26, 26, 46, 0.95);
 }

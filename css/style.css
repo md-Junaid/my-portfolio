@@ -33,7 +33,7 @@ a {
   /* font: normal 200 15px/2px var(--roboto-cursive); */
   /* text-transform: uppercase; */
   padding: 1rem;
-  /* color: var(--title-color); */
+  color: var(--title-color);
 }
 
 .header_area .main-menu .navbar-nav .nav-item a{
@@ -75,7 +75,12 @@ body{
 
 
 .site-main .site-banner .site-title h4{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.site-main .site-banner .site-title h6{
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
@@ -99,7 +104,7 @@ body{
 }
 
 .css-typing h4:nth-child(2){
-  width: 18.5em;
+  width: 24.5em;
   opacity: 0;
   -webkit-animation: type2 3s steps(40, end);
   animation: type2 3s steps(40, end);
@@ -110,7 +115,7 @@ body{
 }
 
 .css-typing h4:nth-child(3){
-  width: 17.4em;
+  width: 23.4em;
   opacity: 0;
   -webkit-animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
   animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
@@ -122,7 +127,7 @@ body{
 }
 
 .css-typing h6:nth-child(2){
-  width: 26.5em;
+  width: 28.9em;
   opacity: 0;
   -webkit-animation: type2 3s steps(40, end);
   animation: type2 3s steps(40, end);
@@ -133,7 +138,7 @@ body{
 }
 
 .css-typing h6:nth-child(3){
-  width: 24.4em;
+  width: 27.7em;
   opacity: 0;
   -webkit-animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
   animation: type3 3s steps(40, end), blink .5s step-end infinite alternate;
@@ -354,7 +359,7 @@ body{
   margin: 0.25rem;
   font-weight: 600;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-muted);
   border-radius: 25px;
   transition: all 0.3s ease;
 }
@@ -442,7 +447,7 @@ body{
 
 .project-card-meta {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-lighter);
   margin: 0;
 }
 
@@ -471,7 +476,7 @@ body{
 .tech-tag {
   font-size: 0.7rem;
   padding: 0.2rem 0.6rem;
-  background: #f5f5f8;
+  background: var(--tag-bg);
   border-radius: 12px;
   color: var(--primary-color);
   font-weight: 500;
@@ -480,7 +485,7 @@ body{
 /* Card Footer */
 .project-card-footer {
   padding: 0.5rem 1rem 0.875rem;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--surface-border);
 }
 
 .project-card-link {
@@ -537,7 +542,7 @@ body{
 
 .modal-content {
   position: relative;
-  background: white;
+  background: var(--card-bg);
   border-radius: 16px;
   max-width: 700px;
   width: 90%;
@@ -559,10 +564,10 @@ body{
   width: 36px;
   height: 36px;
   border: none;
-  background: #f5f5f5;
+  background: var(--surface-border);
   border-radius: 50%;
   font-size: 1.5rem;
-  color: #666;
+  color: var(--text-muted);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -581,7 +586,7 @@ body{
   align-items: center;
   gap: 1.25rem;
   padding: 2rem 2rem 1rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--surface-border);
 }
 
 .modal-icon {
@@ -665,7 +670,7 @@ body{
 
 .modal-links {
   padding-top: 1rem;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--surface-border);
 }
 
 .modal-link {
@@ -740,11 +745,11 @@ body{
 
 .testimonials-area {
   padding: 4rem 0;
-  background: #f8f9fa;
+  background: var(--surface-light);
 }
 
 .testimonial-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 16px;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -781,7 +786,7 @@ body{
   align-items: center;
   gap: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--surface-border);
 }
 
 .testimonial-img {
@@ -801,7 +806,7 @@ body{
 
 .testimonial-info span {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-lighter);
 }
 
 /* End Testimonials Area */
@@ -836,7 +841,7 @@ footer.footer-area .social a:hover>i{
 
 .experience-area {
   padding: 4rem 0;
-  background: #f8f9fa;
+  background: var(--surface-light);
 }
 
 .experience-area .about-title {
@@ -907,7 +912,7 @@ footer.footer-area .social a:hover>i{
 }
 
 .timeline-content {
-  background: white;
+  background: var(--card-bg);
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
@@ -961,7 +966,7 @@ footer.footer-area .social a:hover>i{
 }
 
 .skill-category {
-  background: white;
+  background: var(--card-bg);
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
@@ -1020,7 +1025,7 @@ footer.footer-area .social a:hover>i{
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--navbar-fixed-bg);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   z-index: 9999;
@@ -1072,7 +1077,7 @@ footer.footer-area .social a:hover>i{
   padding: 0.8rem 1.2rem;
   position: relative;
   font-weight: 600;
-  color: #6c757d;
+  color: var(--text-muted);
   transition: all 0.3s ease;
   border-radius: 8px;
 }
@@ -1135,10 +1140,6 @@ footer.footer-area .social a:hover>i{
 .theme-toggle:hover {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
-}
-
-[data-theme="dark"] .theme-toggle .fa-moon::before {
-  content: "\f185";
 }
 
 /* ==================== Languages Section ==================== */
@@ -1241,7 +1242,7 @@ footer.footer-area .social a:hover>i{
 
 .education-location {
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-lighter);
 }
 
 .education-location i {
@@ -1266,7 +1267,7 @@ footer.footer-area .social a:hover>i{
 }
 
 .contact-form .form-control::placeholder {
-  color: #999;
+  color: var(--text-lighter);
 }
 
 .contact-form .form-control:focus {
@@ -1331,7 +1332,8 @@ footer.footer-area .social a:hover>i{
 [data-theme="dark"] .about-title h2,
 [data-theme="dark"] h3,
 [data-theme="dark"] h4,
-[data-theme="dark"] h5 {
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
   color: var(--title-color);
 }
 
@@ -1368,4 +1370,146 @@ footer.footer-area .social a:hover>i{
 
 [data-theme="dark"] .project-modal {
   background: var(--card-bg);
+}
+
+/* ==================== Enhanced Dark Mode Styles ==================== */
+
+/* Navbar toggler icon for dark mode */
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Skill badges with improved contrast */
+[data-theme="dark"] .skill-badge.expert,
+[data-theme="dark"] .skill-badge.advanced,
+[data-theme="dark"] .skill-badge.intermediate {
+  background: rgba(133, 79, 238, 0.25);
+  color: #c4b5fd;
+}
+
+/* Language badges dark mode */
+[data-theme="dark"] .language-badge {
+  background: rgba(133, 79, 238, 0.2);
+  color: #c4b5fd;
+}
+
+/* Tech tags dark mode */
+[data-theme="dark"] .tech-tag {
+  background: var(--tag-bg);
+  color: #c4b5fd;
+}
+
+/* Modal tech tags dark mode */
+[data-theme="dark"] .modal-tech-tag {
+  background: linear-gradient(135deg, rgba(68, 88, 220, 0.2) 0%, rgba(133, 79, 238, 0.2) 100%);
+  border-color: rgba(133, 79, 238, 0.4);
+  color: #c4b5fd;
+}
+
+/* Filter buttons dark mode hover */
+[data-theme="dark"] .site-main .project-area .button-group button:hover {
+  background: rgba(133, 79, 238, 0.2);
+}
+
+/* Card hover shadows for dark mode */
+[data-theme="dark"] .timeline-content:hover {
+  box-shadow: 0 10px 30px rgba(133, 79, 238, 0.2);
+}
+
+[data-theme="dark"] .card.our-project:hover {
+  box-shadow: 0 8px 25px rgba(133, 79, 238, 0.25);
+}
+
+[data-theme="dark"] .testimonial-card:hover {
+  box-shadow: 0 8px 30px rgba(133, 79, 238, 0.2);
+}
+
+[data-theme="dark"] .skill-category:hover {
+  box-shadow: 0 8px 30px rgba(133, 79, 238, 0.2);
+}
+
+[data-theme="dark"] .education-card:hover {
+  box-shadow: 0 8px 30px rgba(133, 79, 238, 0.2);
+}
+
+/* Modal close button dark mode */
+[data-theme="dark"] .modal-close {
+  background: var(--bg-secondary);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .modal-close:hover {
+  background: var(--gradient-color);
+  color: white;
+}
+
+/* Form inputs dark mode */
+[data-theme="dark"] .contact-form .form-control {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .contact-form .form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 4px rgba(133, 79, 238, 0.25);
+}
+
+/* Scrollbar styling for dark mode */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4458dc 0%, #854fee 100%);
+  border-radius: 5px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5568ec 0%, #9560fe 100%);
+}
+
+/* Focus states for accessibility in dark mode */
+[data-theme="dark"] *:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .btn:focus-visible,
+[data-theme="dark"] .nav-link:focus-visible,
+[data-theme="dark"] .theme-toggle:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(133, 79, 238, 0.25);
+}
+
+/* Selection color in dark mode */
+[data-theme="dark"] ::selection {
+  background: rgba(133, 79, 238, 0.4);
+  color: #ffffff;
+}
+
+/* Link colors in dark mode paragraphs */
+[data-theme="dark"] .para a,
+[data-theme="dark"] p a {
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] .para a:hover,
+[data-theme="dark"] p a:hover {
+  color: #c4b5fd;
+}
+
+/* Project card dark mode enhancements */
+[data-theme="dark"] .card.our-project {
+  border: 1px solid var(--surface-border);
+}
+
+/* Sticky header dark mode shadow */
+[data-theme="dark"] .header_area.navbar_fixed {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
