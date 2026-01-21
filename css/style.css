@@ -713,59 +713,75 @@ body{
 
 /* ============== End Project Modal ============== */
 
-/* Start Testimonial Area */
+/* Start Testimonials Area */
 
-.site-main .about-area .about-title p{
-  padding: 1rem 7rem;
+.testimonials-area {
+  padding: 4rem 0;
+  background: #f8f9fa;
 }
 
-.site-main .about-area .client{
-  background: #ffffff10;
-  box-shadow: var(--box-shadow);
-  margin: 3rem 0rem;
-  border-radius: 100px;
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
-.site-main .about-area .client .client-img{
-  padding: 0.2rem;
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(118, 85, 225, 0.12);
 }
 
-.client .img-fluid{
-  border-radius: 100px;
-  width: 150px !important;
+.testimonial-quote {
+  margin-bottom: 1rem;
 }
 
-.site-main .about-area .client .about-client{
-  padding-top: 1.5rem;
-  padding-left: 0.1rem;
+.testimonial-quote i {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  opacity: 0.4;
 }
 
-.site-main .about-area .client .about-client h4{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
-.site-main .about-area .client .about-client p{
-  font-size: 14px;
-  text-align: justify;
-  padding: 1px 8px;
-}
-
-.site-main .about-area .owl-carousel .owl-item{
+.testimonial-author {
   display: flex;
-  justify-content: center;
-  padding: 0 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
 }
 
-.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
-  background: var(--primary-color);
-  width: 12px;
-  height: 12px;
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(133, 79, 238, 0.2);
 }
 
-/* End Testimonial Area*/
+.testimonial-info h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin: 0 0 0.2rem;
+}
+
+.testimonial-info span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* End Testimonials Area */
 
 /* Start Footer Area */
 
@@ -960,19 +976,11 @@ footer.footer-area .social a:hover>i{
   transform: scale(1.05);
 }
 
-.skill-badge.expert {
-  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-  color: white;
-}
-
-.skill-badge.advanced {
-  background: rgba(133, 79, 238, 0.2);
-  color: var(--secondary-color);
-}
-
+.skill-badge.expert,
+.skill-badge.advanced,
 .skill-badge.intermediate {
-  background: #e9ecef;
-  color: #495057;
+  background: rgba(133, 79, 238, 0.15);
+  color: var(--secondary-color);
 }
 
 /* End Skills Area */
@@ -1059,45 +1067,6 @@ footer.footer-area .social a:hover>i{
   background: var(--gradient-color);
   color: white;
   box-shadow: 0 4px 15px rgba(133, 79, 238, 0.4);
-}
-
-/* Testimonial Enhancement */
-
-.site-main .about-area .client {
-  background: white;
-  box-shadow: var(--box-shadow);
-  margin: 2rem 0;
-  border-radius: 20px;
-  padding: 2rem;
-  transition: transform 0.3s ease;
-}
-
-.site-main .about-area .client:hover {
-  transform: translateY(-5px);
-}
-
-.site-main .about-area .client .about-client h4 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.1rem;
-  line-height: 20px;
-  color: var(--title-color);
-}
-
-.site-main .about-area .client .about-client p {
-  font-size: 0.95rem;
-  text-align: justify;
-  padding: 1rem 0;
-  line-height: 1.7;
-  color: var(--text-color);
-}
-
-.client .img-fluid {
-  border-radius: 50%;
-  width: 100px !important;
-  height: 100px;
-  object-fit: cover;
-  border: 3px solid var(--gradient-color);
 }
 
 /* Responsive Timeline */
