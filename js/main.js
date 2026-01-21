@@ -290,16 +290,13 @@ I used the Twython library to collect tweets via the Twitter API and TextBlob fo
   const themeToggle = document.getElementById('themeToggle');
   if (!themeToggle) return;
 
-  // Check for saved theme preference, then system preference
+  // Check for saved theme preference, default to light mode
   function getPreferredTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       return savedTheme;
     }
-    // Check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
+    // Default to light mode for new visitors
     return 'light';
   }
 
