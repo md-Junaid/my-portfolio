@@ -4,7 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junaid - Portfolio</title>
+  <title>Junaid Abbas Mohammed - Full Stack / AI Engineer</title>
+  <meta name="description" content="Experienced Full Stack Engineer specializing in React, Vue.js, Node.js, and AI-powered systems. Building scalable web platforms and enterprise applications.">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://junaid-abbas.netlify.app/">
+  <meta property="og:title" content="Junaid Abbas Mohammed - Full Stack / AI Engineer">
+  <meta property="og:description" content="Experienced Full Stack Engineer specializing in React, Vue.js, Node.js, and AI-powered systems. Building scalable web platforms and enterprise applications.">
+  <meta property="og:image" content="https://junaid-abbas.netlify.app/img/banner/banner-image.png">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Junaid Abbas Mohammed - Full Stack / AI Engineer">
+  <meta name="twitter:description" content="Experienced Full Stack Engineer specializing in React, Vue.js, Node.js, and AI-powered systems.">
+  <meta name="twitter:image" content="https://junaid-abbas.netlify.app/img/banner/banner-image.png">
 
   <!-- Bootstrap css file -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +58,9 @@
               <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#tech">Technologies</a>
             </li>
             <li class="nav-item">
@@ -51,6 +68,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-2">
+              <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -70,7 +95,7 @@
             <h3 class="title-text hidden">Hey there,
             </h3>
             <h4 class="title-text hidden">I'm Junaid, a Full Stack / Frontend / AI Engineer</h4>
-            <h4 class="title-text hidden">Building scalable web platforms & AI-powered systems</h4>
+            <h6 class="title-text hidden">Building scalable web platforms & AI-powered systems</h6>
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
                 <a href="mailto:md.junaid028@gmail.com">
@@ -85,7 +110,7 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-12 banner-image">
-            <img src="./img/banner/banner-image.png" alt="banner-pic" class="img-fluid">
+            <img src="./img/banner/banner-image.png" alt="Junaid Abbas Mohammed - Full Stack Engineer illustration" class="img-fluid">
           </div>
         </div>
       </div>
@@ -117,10 +142,18 @@
                 on reliability, performance, and user-centric design.
               </p>
               <p class="para">
-                Currently working at TechSchweiz on mission-critical airport systems in collaboration with Honeywell engineers. 
-                Proficient in React, Vue.js, Node.js, Python, LangChain, and cloud technologies. I value good design 
+                Currently working at TechSchweiz on mission-critical airport systems in collaboration with Honeywell engineers.
+                Proficient in React, Vue.js, Node.js, Python, LangChain, and cloud technologies. I value good design
                 and believe that the look and feel of an app are just as important as its core functionality.
               </p>
+              <div class="languages-section mt-4">
+                <h5 class="text-uppercase mb-3">Languages</h5>
+                <div class="language-tags">
+                  <span class="language-badge"><i class="fas fa-globe-asia"></i> Hindi (Native)</span>
+                  <span class="language-badge"><i class="fas fa-globe-europe"></i> German (B1)</span>
+                  <span class="language-badge"><i class="fas fa-globe-americas"></i> English (Fluent)</span>
+                </div>
+              </div>
             </div>
             <a href="/resources/Junaid CV.pdf" download>
               <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
@@ -226,6 +259,34 @@
     </section>
     <!-- ===================== End Experience Timeline Area   =================== -->
 
+    <!-- ===================== Start Education Area =================== -->
+    <!-- <section class="education-area" id="education">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="about-title">
+              <h1 class="text-uppercase title-h1">Education</h1>
+              <p class="para">Academic background</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-5 col-md-6">
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Bachelor of Engineering</h3>
+              <h4>Information Technology</h4>
+              <p class="education-institution">Muffakham Jah College of Engineering and Technology</p>
+              <p class="education-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ===================== End Education Area =================== -->
+
     <!-- ===================== Start Skills Area   =================== -->
     <section class="skills-area" id="tech">
       <div class="container">
@@ -307,11 +368,9 @@
         </div>
         
         <div class="d-flex flex-row flex-wrap call-area justify-content-center mt-5">
-          <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-          <div class="call-now">
-            <a href="#" class="text-uppercase h4">Call Now</a>
-            <span class="py-2">(+49) 176 75273728</span>
-          </div>
+          <a href="#contact" class="btn button primary-button text-uppercase">
+            <i class="fas fa-envelope me-2"></i> Get in Touch
+          </a>
         </div>
       </div>
     </section>
@@ -435,7 +494,7 @@
           <!-- Pushbox -->
           <div class="col-lg-4 col-md-6 col-sm-12 element-item work">
             <div class="card our-project" data-project="pushbox">
-              <img src="./img/projects/pushbox.png" class="card-img-top" alt="Pushbox">
+              <img src="./img/projects/pushbox.png" class="card-img-top" loading="lazy" alt="Pushbox">
               <div class="project-card-header">
                 <h5 class="project-card-title">Pushbox</h5>
                 <p class="project-card-meta">Wobe Systems (2019 - 2020)</p>
@@ -504,7 +563,7 @@
           <!-- Fish Larvae Visualization -->
           <div class="col-lg-4 col-md-6 col-sm-12 element-item academic">
             <div class="card our-project" data-project="fish-larvae">
-              <img src="./img/projects/traj1.JPG" class="card-img-top" alt="Fish Larvae Visualization">
+              <img src="./img/projects/traj1.JPG" class="card-img-top" loading="lazy" alt="Fish Larvae Visualization">
               <div class="project-card-header">
                 <h5 class="project-card-title">Fish Larvae Visualization</h5>
                 <p class="project-card-meta">Kiel University (2023)</p>
@@ -549,7 +608,7 @@
           <!-- Study in Kiel -->
           <div class="col-lg-4 col-md-6 col-sm-12 element-item work">
             <div class="card our-project" data-project="study-kiel">
-              <img src="./img/projects/sik.png" class="card-img-top" alt="Study in Kiel">
+              <img src="./img/projects/sik.png" class="card-img-top" loading="lazy" alt="Study in Kiel">
               <div class="project-card-header">
                 <h5 class="project-card-title">Study in Kiel</h5>
                 <p class="project-card-meta">Side Project (2020)</p>
@@ -569,7 +628,7 @@
           <!-- Heide Park Tour -->
           <div class="col-lg-4 col-md-6 col-sm-12 element-item academic">
             <div class="card our-project" data-project="heide-park">
-              <img src="./img/projects/hpt.png" class="card-img-top" alt="Heide Park Tour">
+              <img src="./img/projects/hpt.png" class="card-img-top" loading="lazy" alt="Heide Park Tour">
               <div class="project-card-header">
                 <h5 class="project-card-title">Heide Park Tour</h5>
                 <p class="project-card-meta">Kiel University (2019)</p>
@@ -590,7 +649,7 @@
           <!-- Sentiment Analysis -->
           <div class="col-lg-4 col-md-6 col-sm-12 element-item academic ai">
             <div class="card our-project" data-project="sentiment">
-              <img src="./img/projects/saotd.png" class="card-img-top" alt="Sentiment Analysis">
+              <img src="./img/projects/saotd.png" class="card-img-top" loading="lazy" alt="Sentiment Analysis">
               <div class="project-card-header">
                 <h5 class="project-card-title">Sentiment Analysis</h5>
                 <p class="project-card-meta">Bachelor Thesis (2017)</p>
@@ -681,6 +740,50 @@
       </div>
     </section>
     <!-- ===================== End Testimonials Area =================== -->
+
+    <!-- ===================== Start Contact Area =================== -->
+    <section class="contact-area" id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="about-title">
+              <h1 class="text-uppercase title-h1">Get In Touch</h1>
+              <p class="para">Have a project in mind? Let's talk!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="d-none">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" name="subject" class="form-control" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn button primary-button text-uppercase">
+                  <i class="fas fa-paper-plane me-2"></i> Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== End Contact Area =================== -->
 
   </main>
   <!-- ============== End Main Area   ================= -->

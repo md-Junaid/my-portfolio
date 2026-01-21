@@ -284,3 +284,52 @@ I used the Twython library to collect tweets via the Twitter API and TextBlob fo
   });
 
 });
+
+// ==================== Dark Mode Toggle ====================
+(function() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+
+  // Get saved theme or default to light
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+})();
+
+// ==================== Scroll Animations ====================
+(function() {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const animateOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        animateOnScroll.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Apply to elements after DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll(
+      '.timeline-content, .skill-category, .education-card, .testimonial-card'
+    );
+
+    animatedElements.forEach((el, index) => {
+      el.classList.add('animate-ready');
+      el.style.transitionDelay = `${index * 0.1}s`;
+      animateOnScroll.observe(el);
+    });
+  });
+})();

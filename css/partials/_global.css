@@ -2,6 +2,10 @@
   font: normal bold 50px/72px;
 }
 
+.subtitle-text{
+  font: normal bold 30px/52px;
+}
+
 .text-uppercase{
   text-transform: uppercase;
 }
