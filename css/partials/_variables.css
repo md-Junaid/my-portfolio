@@ -41,25 +41,54 @@ html,body{
   --roboto:'Roboto';
 }
 
-/* Dark mode color overrides */
+/* ============================================
+   DARK MODE - Premium Dark Theme
+   Inspired by modern design systems
+   ============================================ */
 [data-theme="dark"] {
-  --title-color: #f5f5f5;
-  --text-color: #b0b0b0;
-  --border-color: #333333;
-  --bg-color: #1a1a2e;
-  --bg-secondary: #16213e;
-  --card-bg: #1f2937;
-  --box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+  /* === Core Background Colors === */
+  /* Using a rich dark slate with subtle blue undertone */
+  --bg-color: #0f172a;
+  --bg-secondary: #131c2e;
+  --bg-tertiary: #334155;
 
-  /* Muted text colors */
-  --text-muted: #9ca3af;
-  --text-lighter: #6b7280;
+  /* === Card & Surface Colors === */
+  /* Cards clearly elevated from background - MUST be lighter than bg-secondary */
+  --card-bg: #1e293b;
+  --card-bg-hover: #2d3a4f;
+  --surface-light: #131c2e;
+  --surface-border: rgba(148, 163, 184, 0.15);
 
-  /* Surface colors */
-  --surface-light: #16213e;
-  --surface-border: #374151;
+  /* === Text Colors === */
+  /* High contrast, easy on the eyes */
+  --title-color: #f1f5f9;
+  --text-color: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-lighter: #64748b;
 
-  /* Component backgrounds */
-  --tag-bg: rgba(133, 79, 238, 0.2);
-  --navbar-fixed-bg: rgba(26, 26, 46, 0.95);
+  /* === Border Colors === */
+  --border-color: rgba(148, 163, 184, 0.2);
+  --border-highlight: rgba(139, 92, 246, 0.5);
+  --card-border: rgba(148, 163, 184, 0.25);
+
+  /* === Accent Colors (Purple/Violet theme) === */
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #a78bfa;
+  --accent-glow: rgba(139, 92, 246, 0.4);
+  --accent-subtle: rgba(139, 92, 246, 0.15);
+
+  /* === Shadows === */
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-color: 0 10px 40px -10px rgba(139, 92, 246, 0.3);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
+
+  /* === Component Specific === */
+  --tag-bg: rgba(139, 92, 246, 0.15);
+  --tag-color: #c4b5fd;
+  --navbar-fixed-bg: rgba(15, 23, 42, 0.9);
+
+  /* === Gradient Overrides === */
+  --gradient-color: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
 }

@@ -1,5 +1,6 @@
 .title-text{
   font: normal bold 50px/72px;
+  color: var(--title-color);
 }
 
 .subtitle-text{
@@ -83,6 +84,7 @@ button:active{
 
 .title-h1{
     font: normal bold 39px/ 40px var(--roboto);
+    color: var(--title-color);
 }
 
 
