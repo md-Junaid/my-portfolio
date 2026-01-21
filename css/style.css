@@ -962,6 +962,28 @@ footer.footer-area .social a:hover>i{
   font-weight: 500;
 }
 
+/* Employment Badge */
+.employment-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.employment-badge.full-time {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 /* End Experience Timeline Area */
 
 /* Start Skills Area */
@@ -1611,6 +1633,13 @@ footer.footer-area .social a:hover>i{
   background: var(--accent-subtle);
   color: var(--tag-color);
   border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Employment Badge - Dark Mode */
+[data-theme="dark"] .employment-badge.full-time {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
 /* === SKILLS SECTION === */
